@@ -1,0 +1,36 @@
+### Create a room
+POST http://localhost:5000/api/v1/rooms/3
+Content-Type: application/json
+
+{
+    "title": "Deluxe Room",
+    "price": 200,
+    "maxPeople": 4,
+    "desc": "Full size bed, 2 bathroom, 1 balcony",
+    "roomNumbers": [{"number":105,"unavailableDates":[]},{"number":107,"unavailableDates":[]}]
+}
+
+### Update room availability
+PATCH http://localhost:5000/api/v1/rooms/4/availability
+Content-Type: application/json
+
+{
+    "dates": ["13-05-2022", "15-05-2022"]
+}
+
+### Update room
+PATCH http://localhost:5000/api/v1/rooms/2
+Content-Type: application/json
+
+{
+    "price": 70
+}
+
+### Get single room
+GET http://localhost:5000/api/v1/rooms/1
+
+### Get all rooms
+GET http://localhost:5000/api/v1/rooms
+
+### Delete Room
+DELETE  http://localhost:5000/api/v1/rooms/3/5

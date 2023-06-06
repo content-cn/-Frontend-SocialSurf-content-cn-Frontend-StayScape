@@ -1,0 +1,41 @@
+.navbar {
+  height: 50px;
+  background-color: #003580;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar .container {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.navbar .container .logo {
+  font-weight: 600;
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar .container .items {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar .container .items > span {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.navbar .container .items button {
+  border: none;
+  padding: 5px 10px;
+  color: #003580;
+  cursor: pointer;
+}

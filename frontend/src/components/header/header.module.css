@@ -1,0 +1,57 @@
+.header {
+  background-color: #003580;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.header .container {
+  width: 100%;
+  max-width: 1024px;
+  margin-block: 20px 100px;
+}
+
+.header .container .listMode {
+  margin-bottom: 0;
+}
+
+.header .container .list {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+.header .container .list .item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 150ms ease-in;
+}
+
+.header .container .list .item:hover,
+.header .container .list .item.active {
+  background-color: #80b5ff66;
+  border: 2px solid #d3d3d3;
+}
+
+.header .container .title {
+  font-size: 3em;
+}
+
+.header .container .desc {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.header .container .headerBtn {
+  background-color: #0071c2;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}

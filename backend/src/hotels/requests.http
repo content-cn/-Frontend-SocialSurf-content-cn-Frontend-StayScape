@@ -1,0 +1,48 @@
+### Create a hotel
+POST http://localhost:5000/api/v1/hotels
+Content-Type: application/json
+
+{
+    "name": "Vivanta Bengaluru",
+    "type": "Hotel",
+    "city": "Bangalore",
+    "address": "66, Residency Rd",
+    "distance": "400",
+    "title": "5 star hotel in the city",
+    "desc": "Very good hotel",
+    "cheapestPrice": 200
+}
+
+### Get all hotels
+GET http://localhost:5000/api/v1/hotels
+
+
+### Get single hotel
+GET http://localhost:5000/api/v1/hotels/3
+
+### Get hotel rooms
+GET http://localhost:5000/api/v1/hotels/1/rooms
+
+### Update a hotel
+PATCH http://localhost:5000/api/v1/hotels/7
+Content-Type: application/json
+
+{
+    "photos": [
+    "https://res.cloudinary.com/dl26pbek4/image/upload/v1657803595/od25khrxynna5qink6gu.jpg",
+    "https://res.cloudinary.com/dl26pbek4/image/upload/v1657803594/hqiwzkihcl1oemrmnvnk.jpg",
+    "https://res.cloudinary.com/dl26pbek4/image/upload/v1657803594/g0lbifq8mckd7ehs2mpb.jpg",
+    "https://res.cloudinary.com/dl26pbek4/image/upload/v1657803593/twbkbhbn66xcbh73bpwl.jpg",
+    "https://res.cloudinary.com/dl26pbek4/image/upload/v1657803592/pk0shcrqoyhry98e8e1q.jpg",
+    "https://res.cloudinary.com/dl26pbek4/image/upload/v1657803594/ijt3li2iotteof07qcat.jpg"
+]
+}
+
+### Delete a hotel
+DELETE http://localhost:5000/api/v1/hotels/3
+
+### Get hotel count by city
+GET http://localhost:5000/api/v1/hotels/countByCity?cities=Pune,madrid,akurdi,pune
+
+### Get count by type
+GET http://localhost:5000/api/v1/hotels/countByType
